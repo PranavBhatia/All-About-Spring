@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringIn10StepsApplication {
 
 	public static void main(String[] args) {
-		BinarySearchImpl binarySearchImpl = new BinarySearchImpl();
+		BinarySearchImpl binarySearchImpl = new BinarySearchImpl(new QuickSortAlgorithm());
+//		BinarySearchImpl binarySearchImpl = new BinarySearchImpl(new BubbleSortAlgorithm());
 		int result = binarySearchImpl.binarySearch(new int[] { 12, 4, 6 }, 3);
 		System.out.println(result);
 
