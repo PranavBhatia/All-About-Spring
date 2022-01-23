@@ -11,7 +11,11 @@ public class SpringIn10StepsApplication {
 		// Application Context
 		ConfigurableApplicationContext applicationContext = SpringApplication.run(SpringIn10StepsApplication.class,
 				args);
+
 		BinarySearchImpl binarySearchImpl = applicationContext.getBean(BinarySearchImpl.class);
+		BinarySearchImpl binarySearchImpl2 = applicationContext.getBean(BinarySearchImpl.class);
+
+		System.out.println("\n" + binarySearchImpl + "\n" + binarySearchImpl2 + "\n");
 
 		int result = binarySearchImpl.binarySearch(new int[] { 12, 4, 6 }, 3);
 		System.out.println(result);
