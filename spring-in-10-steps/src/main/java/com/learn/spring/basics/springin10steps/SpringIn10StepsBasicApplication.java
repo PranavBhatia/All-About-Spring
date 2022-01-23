@@ -1,15 +1,17 @@
-package com.learn.spring.basics.springin5steps;
+package com.learn.spring.basics.springin10steps;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import com.learn.spring.basics.springin10steps.basic.BinarySearchImpl;
+
 @SpringBootApplication
-public class SpringIn10StepsApplication {
+public class SpringIn10StepsBasicApplication {
 
 	public static void main(String[] args) {
 		// Application Context
-		ConfigurableApplicationContext applicationContext = SpringApplication.run(SpringIn10StepsApplication.class,
+		ConfigurableApplicationContext applicationContext = SpringApplication.run(SpringIn10StepsBasicApplication.class,
 				args);
 
 		BinarySearchImpl binarySearchImpl = applicationContext.getBean(BinarySearchImpl.class);
