@@ -1,4 +1,4 @@
-package com.learn.spring.basics.xml;
+package com.learn.spring.basics.spring.xml;
 
 public class XmlPersonDAO {
 	XmlJdbcConnection xmlJdbcConnection;
