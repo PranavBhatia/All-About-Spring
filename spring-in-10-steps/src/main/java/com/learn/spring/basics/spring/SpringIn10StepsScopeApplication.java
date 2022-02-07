@@ -1,4 +1,4 @@
-package com.learn.spring.basics.springin10steps;
+package com.learn.spring.basics.spring;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,7 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import com.learn.spring.basics.springin10steps.scope.PersonDAO;
+import com.learn.spring.basics.spring.scope.PersonDAO;
 
 @SpringBootApplication
 public class SpringIn10StepsScopeApplication {

@@ -1,10 +1,10 @@
-package com.learn.spring.basics.springin10steps;
+package com.learn.spring.basics.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import com.learn.spring.basics.springin10steps.basic.BinarySearchImpl;
+import com.learn.spring.basics.spring.basic.BinarySearchImpl;
 
 @SpringBootApplication
 public class SpringIn10StepsBasicApplication {

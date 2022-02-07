@@ -1,4 +1,4 @@
-package com.learn.spring.basics.springin10steps.scope;
+package com.learn.spring.basics.spring.scope;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;

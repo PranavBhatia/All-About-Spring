@@ -1,4 +1,4 @@
-package com.learn.spring.basics.springin10steps.basic;
+package com.learn.spring.basics.spring.basic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

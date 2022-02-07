@@ -1,4 +1,4 @@
-package com.learn.spring.basics.springin10steps.basic;
+package com.learn.spring.basics.spring.basic;
 
 public interface SortAlgorithm {
 	public int[] sort(int[] numbers);
