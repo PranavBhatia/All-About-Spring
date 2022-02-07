@@ -7,11 +7,11 @@ import org.springframework.context.ConfigurableApplicationContext;
 import com.learn.spring.basics.spring.basic.BinarySearchImpl;
 
 @SpringBootApplication
-public class SpringIn10StepsBasicApplication {
+public class BasicApplication {
 
 	public static void main(String[] args) {
 		// Application Context
-		ConfigurableApplicationContext applicationContext = SpringApplication.run(SpringIn10StepsBasicApplication.class,
+		ConfigurableApplicationContext applicationContext = SpringApplication.run(BasicApplication.class,
 				args);
 
 		BinarySearchImpl binarySearchImpl = applicationContext.getBean(BinarySearchImpl.class);

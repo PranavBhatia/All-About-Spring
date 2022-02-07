@@ -9,13 +9,13 @@ import org.springframework.context.ConfigurableApplicationContext;
 import com.learn.spring.basics.spring.scope.PersonDAO;
 
 @SpringBootApplication
-public class SpringIn10StepsScopeApplication {
+public class ScopeApplication {
 
-	private static Logger LOGGER = LoggerFactory.getLogger(SpringIn10StepsScopeApplication.class);
+	private static Logger LOGGER = LoggerFactory.getLogger(ScopeApplication.class);
 
 	public static void main(String[] args) {
 		// Application Context
-		ConfigurableApplicationContext applicationContext = SpringApplication.run(SpringIn10StepsScopeApplication.class,
+		ConfigurableApplicationContext applicationContext = SpringApplication.run(ScopeApplication.class,
 				args);
 
 		PersonDAO personDAO = applicationContext.getBean(PersonDAO.class);
