@@ -1,18 +1,19 @@
 package com.learn.spring.basics.spring;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 import com.learn.spring.basics.spring.basic.BinarySearchImpl;
 
-@SpringBootApplication
+@Configuration
+@ComponentScan
 public class BasicApplication {
 
 	public static void main(String[] args) {
 		// Application Context
-		ConfigurableApplicationContext applicationContext = SpringApplication.run(BasicApplication.class,
-				args);
+		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(BasicApplication.class);
 
 		BinarySearchImpl binarySearchImpl = applicationContext.getBean(BinarySearchImpl.class);
 		BinarySearchImpl binarySearchImpl2 = applicationContext.getBean(BinarySearchImpl.class);
