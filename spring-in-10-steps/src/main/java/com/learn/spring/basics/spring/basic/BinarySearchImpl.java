@@ -1,5 +1,10 @@
 package com.learn.spring.basics.spring.basic;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -9,6 +14,8 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class BinarySearchImpl {
+
+	private Logger LOGGER = LoggerFactory.getLogger(this.getClass());
 
 	@Autowired
 	@Qualifier("bubble")
@@ -24,4 +31,13 @@ public class BinarySearchImpl {
 		return 3;
 	}
 
+	@PostConstruct
+	public void postContruct() {
+		LOGGER.info("In postContruct()");
+	}
+
+	@PreDestroy
+	public void preDestroy() {
+		LOGGER.info("In preDestroy()");
+	}
 }
