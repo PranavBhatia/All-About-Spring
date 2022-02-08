@@ -7,8 +7,7 @@ public class XmlPersonDAO {
 		return xmlJdbcConnection;
 	}
 
-	public void setJdbcConnection(XmlJdbcConnection xMLJdbcConnection) {
-		this.xmlJdbcConnection = xMLJdbcConnection;
+	public void setXmlJdbcConnection(XmlJdbcConnection xmlJdbcConnection) {
+		this.xmlJdbcConnection = xmlJdbcConnection;
 	}
-
 }
